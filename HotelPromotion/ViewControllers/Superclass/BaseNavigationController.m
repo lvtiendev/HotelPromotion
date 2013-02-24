@@ -18,7 +18,7 @@
 {
     NSString *className = NSStringFromClass([self class]);
     self = [self initWithNibName:className bundle:nil];
-    [self.navigationBar setBackgroundImage:[UIImage imageNamed:@"navbar_background"] forBarMetrics:UIBarMetricsDefault];
+    [self.navigationBar setTintColor:[UIColor colorWithRed:153.0/255 green:255.0/255 blue:204.0/255 alpha:1.0]];
     return self;
 }
 
@@ -27,7 +27,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self == nil)
         return self;
-    [self.navigationBar setBackgroundImage:[UIImage imageNamed:@"navbar_background"] forBarMetrics:UIBarMetricsDefault];
+    [self.navigationBar setTintColor:[UIColor colorWithRed:153.0/255 green:255.0/255 blue:204.0/255 alpha:1.0]];
     return self;
 }
 

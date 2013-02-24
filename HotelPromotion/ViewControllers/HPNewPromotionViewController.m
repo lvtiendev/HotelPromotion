@@ -8,6 +8,7 @@
 
 #import "HPNewPromotionViewController.h"
 #import "HPCustomDatePickerViewController.h"
+#import "HPLoginViewController.h"
 
 @interface HPNewPromotionViewController () <UITextFieldDelegate, UITextViewDelegate>
 

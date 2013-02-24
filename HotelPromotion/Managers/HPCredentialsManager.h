@@ -16,4 +16,5 @@
 - (void)loginAsStaff;
 - (void)updatePromotions;
 - (void)insertNewPromotion:(NSDictionary *)dictionary;
+- (void)insertNewBooking: (NSDictionary *)dictionary;
 @end

@@ -11,6 +11,7 @@
 @interface HPPromotion : BaseModel
 @property (nonatomic, copy) NSNumber *uid;
 @property (nonatomic, copy) NSNumber *hid;
+@property (nonatomic, copy) NSNumber *pid;
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, copy) NSString *content;
 @property (nonatomic, copy) NSString *thumbnail;

@@ -53,6 +53,15 @@
 }
 
 - (IBAction)bookPromotion:(id)sender {
+    HPBooking *booking = [[HPBooking alloc] init];
+    HPUser *currentUser = [[HPCredentialsManager sharedInstance] currentUser];
+    booking.uid = currentUser.uid;
+    booking.hid = currentUser.hid;
+    booking.pid = self.promotion.pid;
+    booking.bookTime = [NSDate date];
+    [[HPCredentialsManager sharedInstance] insertNewPromotion:[booking toDictionaryUseNullValue:YES]];
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Confirmation" message:@"You have made a new booking" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alertView show];
 }
 
 - (void)didReceiveMemoryWarning

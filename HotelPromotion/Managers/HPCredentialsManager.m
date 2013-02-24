@@ -27,6 +27,18 @@
 - (void)insertNewPromotion:(NSDictionary *)dictionary {
     NSMutableDictionary * parameters = [NSMutableDictionary dictionary];
     [parameters setObject:@"insert" forKey:@"functionType"];
+    [parameters setObject:dictionary forKey:@"booking"];
+    
+    [self postQueryServerPath:@"hotels/api/booking.php" parameters:parameters success:^(id jsonObject) {
+        NSLog(@"SUCCESS POST");
+    } failure:^(NSError *error) {
+        DLog(@"%@", error);
+    }];
+}
+
+- (void)insertNewBooking:(NSDictionary *)dictionary {
+    NSMutableDictionary * parameters = [NSMutableDictionary dictionary];
+    [parameters setObject:@"insert" forKey:@"functionType"];
     [parameters setObject:dictionary forKey:@"promotion"];
     
     [self postQueryServerPath:@"hotels/api/promotion.php" parameters:parameters success:^(id jsonObject) {

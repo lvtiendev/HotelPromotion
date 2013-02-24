@@ -42,6 +42,9 @@
   
   self.view.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
   self.view.autoresizesSubviews = YES;
+    
+//    [self.navigationController.navigationBar setTintColor:[UIColor colorWithRed:153.0/255 green:255.0/255 blue:204.0/255 alpha:1.0]];
+//    [self.view setBackgroundColor:[UIColor colorWithRed:153.0/255 green:255.0/255 blue:204.0/255 alpha:1.0]];
   
   //Custom image view will stretch correctly on iPhone5
   /*
