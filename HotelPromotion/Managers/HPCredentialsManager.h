@@ -11,13 +11,10 @@
 @interface HPCredentialsManager : NSObject
 @property (nonatomic, strong) HPUser *currentUser;
 @property (nonatomic, strong) NSArray *promotions;
-@property (nonatomic, strong) NSArray *bookings;
-
 + (HPCredentialsManager *)sharedInstance;
 - (void)loginAsCustomer;
 - (void)loginAsStaff;
 - (void)updatePromotions;
-- (void)updateBookings;
 - (void)insertNewPromotion:(NSDictionary *)dictionary;
 - (void)insertNewBooking: (NSDictionary *)dictionary;
 @end

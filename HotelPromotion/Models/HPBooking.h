@@ -21,8 +21,5 @@
 @property (nonatomic, copy) NSDate *bookTime;
 @property (nonatomic, copy) NSDate *startDate;
 @property (nonatomic, copy) NSDate *endDate;
-<<<<<<< HEAD
 
-=======
->>>>>>> Added The Booking View
 @end
