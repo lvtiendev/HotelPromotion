@@ -94,7 +94,24 @@
     } failure:^(NSError *error) {
     }];
 }
-
+- (void)updateBookings {
+    NSMutableDictionary * parameters = [NSMutableDictionary dictionary];
+    [parameters setObject:self.currentUser.hid forKey:@"hid"];
+    [parameters setObject:self.currentUser.uid forKey:@"uid"];
+    
+    [self getQueryServerPath:@"hotels/api/booking.php" parameters:parameters success:^(id jsonObject) {
+        NSMutableArray *bookingModels = [NSMutableArray array];
+        NSArray *bookingJSONs = [jsonObject objectForKey:@"response_message"];
+        for (NSDictionary *dict in bookingJSONs) {
+            HPBooking *booking = [[HPBooking alloc] initWithDictionary:dict];
+            [bookingModels addObject:booking];
+        }
+        self.bookings = bookingModels;
+        DLog(@"FETCH = %u", self.bookings.count);
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"updateBookingsSucceed" object:nil];
+    } failure:^(NSError *error) {
+    }];
+}
 
 - (void)getQueryServerPath:(NSString*)apiSubPath
                  parameters:(NSDictionary*)parameters

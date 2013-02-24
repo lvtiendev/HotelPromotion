@@ -76,7 +76,14 @@
 		9C309BC616DA7019008ECF3A /* HPPromotion.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C309BC516DA7019008ECF3A /* HPPromotion.m */; };
 		9C309BCA16DA7031008ECF3A /* HPPromotionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C309BC816DA7031008ECF3A /* HPPromotionTableViewCell.m */; };
 		9C309BCB16DA7031008ECF3A /* HPPromotionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C309BC916DA7031008ECF3A /* HPPromotionTableViewCell.xib */; };
+<<<<<<< HEAD
 		9C31379616DA98800013C21D /* HPBooking.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C31379516DA98800013C21D /* HPBooking.m */; };
+=======
+		CF1C94C316DA9D910036B9A7 /* HPBookingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF1C94C016DA9D910036B9A7 /* HPBookingTableViewCell.xib */; };
+		CF1C94C416DA9D910036B9A7 /* HPBookingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1C94C216DA9D910036B9A7 /* HPBookingTableViewCell.m */; };
+		CF1C94C716DA9DAC0036B9A7 /* HPBooking.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1C94C616DA9DAC0036B9A7 /* HPBooking.m */; };
+		CF1C94CD16DAA2610036B9A7 /* HPBookingDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1C94CC16DAA2610036B9A7 /* HPBookingDetailViewController.m */; };
+>>>>>>> Added The Booking View
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -191,8 +198,18 @@
 		9C309BC716DA7031008ECF3A /* HPPromotionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPPromotionTableViewCell.h; sourceTree = "<group>"; };
 		9C309BC816DA7031008ECF3A /* HPPromotionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPPromotionTableViewCell.m; sourceTree = "<group>"; };
 		9C309BC916DA7031008ECF3A /* HPPromotionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HPPromotionTableViewCell.xib; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		9C31379416DA98800013C21D /* HPBooking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPBooking.h; sourceTree = "<group>"; };
 		9C31379516DA98800013C21D /* HPBooking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPBooking.m; sourceTree = "<group>"; };
+=======
+		CF1C94C016DA9D910036B9A7 /* HPBookingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HPBookingTableViewCell.xib; sourceTree = "<group>"; };
+		CF1C94C116DA9D910036B9A7 /* HPBookingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPBookingTableViewCell.h; sourceTree = "<group>"; };
+		CF1C94C216DA9D910036B9A7 /* HPBookingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPBookingTableViewCell.m; sourceTree = "<group>"; };
+		CF1C94C516DA9DAC0036B9A7 /* HPBooking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPBooking.h; sourceTree = "<group>"; };
+		CF1C94C616DA9DAC0036B9A7 /* HPBooking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPBooking.m; sourceTree = "<group>"; };
+		CF1C94CB16DAA2610036B9A7 /* HPBookingDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPBookingDetailViewController.h; sourceTree = "<group>"; };
+		CF1C94CC16DAA2610036B9A7 /* HPBookingDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPBookingDetailViewController.m; sourceTree = "<group>"; };
+>>>>>>> Added The Booking View
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -317,6 +334,8 @@
 				9C31379416DA98800013C21D /* HPBooking.h */,
 				9C31379516DA98800013C21D /* HPBooking.m */,
 				9C309BC416DA7019008ECF3A /* HPPromotion.h */,
+				CF1C94C516DA9DAC0036B9A7 /* HPBooking.h */,
+				CF1C94C616DA9DAC0036B9A7 /* HPBooking.m */,
 				9C309BC516DA7019008ECF3A /* HPPromotion.m */,
 				9C309A3116D9FDD7008ECF3A /* HPUser.h */,
 				9C309A3216D9FDD7008ECF3A /* HPUser.m */,
@@ -434,6 +453,8 @@
 				9C309B9716DA17A6008ECF3A /* HPPromotionsViewController.h */,
 				9C309B9816DA17A6008ECF3A /* HPPromotionsViewController.m */,
 				9C309AE316D9FDD7008ECF3A /* Superclass */,
+				CF1C94CB16DAA2610036B9A7 /* HPBookingDetailViewController.h */,
+				CF1C94CC16DAA2610036B9A7 /* HPBookingDetailViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -454,6 +475,9 @@
 		9C309AEA16D9FDD7008ECF3A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CF1C94C016DA9D910036B9A7 /* HPBookingTableViewCell.xib */,
+				CF1C94C116DA9D910036B9A7 /* HPBookingTableViewCell.h */,
+				CF1C94C216DA9D910036B9A7 /* HPBookingTableViewCell.m */,
 				9C309BC716DA7031008ECF3A /* HPPromotionTableViewCell.h */,
 				9C309BC816DA7031008ECF3A /* HPPromotionTableViewCell.m */,
 				9C309BC916DA7031008ECF3A /* HPPromotionTableViewCell.xib */,
@@ -575,6 +599,7 @@
 				9C309B1C16D9FDD7008ECF3A /* back_button.png in Resources */,
 				9C309B1D16D9FDD7008ECF3A /* navbar_background@2x.png in Resources */,
 				9C309BCB16DA7031008ECF3A /* HPPromotionTableViewCell.xib in Resources */,
+				CF1C94C316DA9D910036B9A7 /* HPBookingTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -624,7 +649,13 @@
 				9C309BC316DA6FCA008ECF3A /* HPPromotionDetailViewController.m in Sources */,
 				9C309BC616DA7019008ECF3A /* HPPromotion.m in Sources */,
 				9C309BCA16DA7031008ECF3A /* HPPromotionTableViewCell.m in Sources */,
+<<<<<<< HEAD
 				9C31379616DA98800013C21D /* HPBooking.m in Sources */,
+=======
+				CF1C94C416DA9D910036B9A7 /* HPBookingTableViewCell.m in Sources */,
+				CF1C94C716DA9DAC0036B9A7 /* HPBooking.m in Sources */,
+				CF1C94CD16DAA2610036B9A7 /* HPBookingDetailViewController.m in Sources */,
+>>>>>>> Added The Booking View
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
