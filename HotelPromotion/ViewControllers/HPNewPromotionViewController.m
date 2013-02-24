@@ -11,6 +11,7 @@
 #import "HPLoginViewController.h"
 
 @interface HPNewPromotionViewController () <UITextFieldDelegate, UITextViewDelegate>
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
 @end
 
@@ -32,11 +33,41 @@
     [self.navigationItem setTitle:@"New Promotion"];
     [self.navigationController.tabBarItem setTitle:@"New Promotion"];
     
+    self.scrollView.contentSize = CGSizeMake(320, 400);
+    
+    self.titleTextField = [[UITextField alloc] initWithFrame:CGRectMake(20, 20, 280, 30)];
+    [self.scrollView addSubview:self.titleTextField];
+    self.titleTextField.placeholder = @"Promotion title";
+    self.titleTextField.borderStyle = UITextBorderStyleBezel;
     self.titleTextField.delegate = self;
+    
+    self.contentTextView = [[UITextView alloc] initWithFrame:CGRectMake(20, 70, 280, 100)];
+    [self.scrollView addSubview:self.contentTextView];
+    [self.contentTextView setBackgroundColor:[UIColor colorWithRed:0 green:1 blue:0 alpha:0.2]];
     self.contentTextView.delegate = self;
+    
+    self.categoryTextField = [[UITextField alloc] initWithFrame:CGRectMake(20, 190, 130, 30)];
+    [self.scrollView addSubview:self.categoryTextField];
+    self.categoryTextField.placeholder = @"Category";
+    self.categoryTextField.borderStyle = UITextBorderStyleBezel;
     self.categoryTextField.delegate = self;
+    
+    self.capacityTextField = [[UITextField alloc] initWithFrame:CGRectMake(170, 190, 130, 30)];
+    [self.scrollView addSubview:self.capacityTextField];
+    self.capacityTextField.placeholder = @"Capacity";
+    self.capacityTextField.borderStyle = UITextBorderStyleBezel;
     self.capacityTextField.delegate = self;
+    
+    self.startTimeTextField = [[UITextField alloc] initWithFrame:CGRectMake(20, 240, 130, 30)];
+    [self.scrollView addSubview:self.startTimeTextField];
+    self.startTimeTextField.placeholder = @"Start Time";
+    self.startTimeTextField.borderStyle = UITextBorderStyleBezel;
     self.startTimeTextField.delegate = self;
+    
+    self.endTimeTextField = [[UITextField alloc] initWithFrame:CGRectMake(170, 240, 130, 30)];
+    [self.scrollView addSubview:self.endTimeTextField];
+    self.endTimeTextField.placeholder = @"End Time";
+    self.endTimeTextField.borderStyle = UITextBorderStyleBezel;
     self.endTimeTextField.delegate = self;
 }
 
@@ -118,6 +149,7 @@
     [self setCapacityTextField:nil];
     [self setStartTimeTextField:nil];
     [self setEndTimeTextField:nil];
+    [self setScrollView:nil];
     [super viewDidUnload];
 }
 @end

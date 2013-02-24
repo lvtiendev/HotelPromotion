@@ -9,12 +9,12 @@
 #import "BaseViewController.h"
 
 @interface HPNewPromotionViewController : BaseViewController
-@property (weak, nonatomic) IBOutlet UITextField *titleTextField;
-@property (weak, nonatomic) IBOutlet UITextView *contentTextView;
-@property (weak, nonatomic) IBOutlet UITextField *categoryTextField;
-@property (weak, nonatomic) IBOutlet UITextField *capacityTextField;
-@property (strong, nonatomic) IBOutlet UITextField *startTimeTextField;
-@property (strong, nonatomic) IBOutlet UITextField *endTimeTextField;
+@property (strong, nonatomic) UITextField *titleTextField;
+@property (strong, nonatomic) UITextView *contentTextView;
+@property (strong, nonatomic) UITextField *categoryTextField;
+@property (strong, nonatomic) UITextField *capacityTextField;
+@property (strong, nonatomic) UITextField *startTimeTextField;
+@property (strong, nonatomic) UITextField *endTimeTextField;
 @property (strong, nonatomic) NSDate *startTime;
 @property (strong, nonatomic) NSDate *endTime;
 @end
