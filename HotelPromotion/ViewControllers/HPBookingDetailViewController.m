@@ -14,6 +14,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *endTimeText;
 @property (strong, nonatomic) IBOutlet UILabel *confirmationNumText;
 @property (strong, nonatomic) IBOutlet UILabel *priceText;
+@property (strong, nonatomic) IBOutlet UILabel *statusText;
 
 @end
 
@@ -31,6 +32,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self.navigationItem setTitle:@"Details"];
 	// Do any additional setup after loading the view.
 }
 - (id)initWithBooking:(HPBooking *)booking {
@@ -49,7 +51,12 @@
     self.startTimeText.text = [formatter stringFromDate:self.booking.startDate];
     self.endTimeText.text = [formatter stringFromDate:self.booking.endDate];
     self.confirmationNumText.text = self.booking.confirmationNum;
-    /*self.priceText.text = [[NSString stringWithFormat:@"%@", [self.booking.bookPrice stringValue]] stringByAppendingString:self.booking.bookCurrency];*/
+  /*  if([self.booking.status isEqualToNumber:[NSNumber numberWithInt: 0]]){
+        self.statusText.text = @"Not Confirmed";
+    }else{
+        self.statusText.text = @"Confirmed";
+    }
+    self.priceText.text = [[NSString stringWithFormat:@"%@", [self.booking.bookPrice stringValue]] stringByAppendingString:self.booking.bookCurrency];*/
 }
 - (void)didReceiveMemoryWarning
 {
@@ -63,6 +70,7 @@
     [self setEndTimeText:nil];
     [self setConfirmationNumText:nil];
     [self setPriceText:nil];
+    [self setStatusText:nil];
     [super viewDidUnload];
 }
 @end

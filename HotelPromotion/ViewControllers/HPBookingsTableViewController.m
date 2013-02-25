@@ -31,6 +31,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     [self.tabBarItem setTitle:@"My Bookings"];
+    [self.navigationItem setTitle:@"My Bookings"];
+    [self.navigationController.tabBarItem setTitle:@"My Bookings"];
     
     [self setupTableView];
     [[HPCredentialsManager sharedInstance] updateBookings];
